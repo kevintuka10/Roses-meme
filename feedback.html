@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script src="https://kit.fontawesome.com/f03f52cd3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="main">
+        <header>
+            <a href="#" class="logo">Roses</a>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href ="sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="feedback.html">FeedBack</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+
+
+<div class="container">
+    <div class="feedbackbox">
+        <div class="sebas">
+            <div id="sebas">
+                <img src="assets/feedback-images/pobre.png">
+                <img src="assets/feedback-images/malo.png">
+                <img src="assets/feedback-images/okey.png">
+                <img src="assets/feedback-images/piola.png">
+                <img src="assets/feedback-images/excelente.png">
+            </div>
+        </div>
+        <div class="rating">
+            <i class="fas fa-star" id="one"></i>
+            <i class="fas fa-star" id="two"></i>
+            <i class="fas fa-star" id="three"></i>
+            <i class="fas fa-star" id="four"></i>
+            <i class="fas fa-star" id="five"></i>
+        </div>
+        <div class="text">
+            <h1>Dejanos tu Feedback</h1>
+            <p>Asi podremos echar a sebas del team</p>
+        </div>
+        <div class="button-container">
+            <button class="btn btn1" onclick="window.location.reload();">Enviar</button>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+
+    var stars = document.getElementsByClassName("fas");
+    var sebas = document.getElementById("sebas");
+
+    stars[0].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#e4e4e4";
+        stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        sebas.style.transform = "translateX(0)"
+    }
+    stars[1].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        sebas.style.transform = "translateX(-135px)"
+    }
+    stars[2].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        sebas.style.transform = "translateX(-300px)"
+    }
+    stars[3].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#ffd93b";
+        stars[4].style.color = "#e4e4e4";
+        sebas.style.transform = "translateX(-435px)"
+    }
+    stars[4].onclick = function(){
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#ffd93b";
+        stars[4].style.color = "#ffd93b";
+        sebas.style.transform = "translateX(-585px)"
+    }
+
+
+</script>
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".menu-toggle").click(function(){
+            $(".menu-toggle").toggleClass("active")
+            $("nav").toggleClass("active")
+        })
+    })
+</script>
+
+
+
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="" alt="RosesLogo">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>Gracias Por Visitar</h2>
+            <p>Esperamos que te hayan gustado las prendas</p>
+            <p>Atte Roses</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="" class="fa fa-instagram"></a>
+                <a href="" class="fa fa-github"></a>
+                <a href="" class="fa fa-twitter"></a>
+                <a href="" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2021 <b>Roses</b> - Todos los Derechos Reservados a Travis</small>
+    </div>
+</footer>
+
+</body>
+</html>
